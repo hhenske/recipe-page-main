@@ -83,10 +83,10 @@ h2 {
 }
 
 h3 {
-    font-family: "YoungSerif", Helvetica;
+    font-family: "Outfit-ExtraBold", Helvetica;
     font-size: 18px;
     color: var(--rose800);
-    font-weight: 400;
+    font-weight: 700;
 }
 
 p {
@@ -98,5 +98,6 @@ p {
 
 .prep_card {
     background-color: hsl(30, 54%, 90%, 0.2);
+    padding: 20px;
     
 }
