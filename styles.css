@@ -1,0 +1,102 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --stone100: hsl(30, 54%, 90%);
+    --stone150: hsl(30, 18%, 87%);
+    --stone600: hsl(30, 10%, 34%);
+    --stone900: hsl(24, 5%, 18%);
+    --brown: hsl(14, 45%, 36%);
+    --rose800: hsl(332, 51%, 32%);
+    --rose50: hsl(330, 100%, 98%);
+}
+
+@font-face {
+    font-family: 'YoungSerif';        /* Define the custom font name */
+        src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype'); /* Font file location */
+
+  }
+
+  @font-face {
+    font-family: 'Outfit-Black.ttf';
+        src: url('./assets/fonts/outfit.static/Outfit-Black.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Outfit-Bold-ttf';
+        src: url('./assets/fonts/outfit.static/Outfit-Bold') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Outfit-ExtraBold';
+        src: url('./assets/fonts/outfit.static/Outfit-ExtraBold.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Outfit-Thin';
+        src: url('./assets/fonts/outfit.static/Outfit-Thin.ttf') format('truetype');
+  }
+
+* {
+    font-size: 16px;
+    
+}
+
+body {
+    background-color: var(--stone100);
+    display: flex;
+    flex-direction: column;  /* Stack content and footer vertically */
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically (optional) */
+    padding-top: 50px;
+}
+
+section{
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    width:40%;
+    /* height: 1400px; */
+    margin: 50px;
+    padding: 30px;
+}
+
+section img {
+    
+    border-radius: 10px;
+    /* width: 500px;
+    height:300px; */
+}
+
+h1 {
+    font-family: "YoungSerif", Helvetica;
+    font-size: 36px;
+    color: var(--stone900);
+    font-weight: 400;
+}
+
+h2 {
+    font-family: "YoungSerif", Helvetica;
+    font-size: 32px;
+    color: var(--stone900);
+    font-weight: 400;
+}
+
+h3 {
+    font-family: "YoungSerif", Helvetica;
+    font-size: 18px;
+    color: var(--rose800);
+    font-weight: 400;
+}
+
+p {
+    font-family: "Outfit-Thin", sans-serif;
+    color: var(--stone600);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.prep_card {
+    background-color: hsl(30, 54%, 90%, 0.2);
+    
+}
