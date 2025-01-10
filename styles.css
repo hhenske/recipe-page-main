@@ -16,8 +16,8 @@
   }
 
   @font-face {
-    font-family: 'Outfit-Black.ttf';
-        src: url('./assets/fonts/outfit.static/Outfit-Black.ttf') format('truetype');
+    font-family: 'Outfit-Regular.ttf';
+        src: url('./assets/fonts/outfit.static/Outfit-Regular.ttf') format('truetype');
   }
 
   @font-face {
@@ -26,8 +26,8 @@
   }
 
   @font-face {
-    font-family: 'Outfit-ExtraBold';
-        src: url('./assets/fonts/outfit.static/Outfit-ExtraBold.ttf') format('truetype');
+    font-family: 'Outfit-SemiBold';
+        src: url('./assets/fonts/outfit.static/Outfit-SemiBold.ttf') format('truetype');
   }
 
   @font-face {
@@ -72,32 +72,68 @@ h1 {
     font-family: "YoungSerif", Helvetica;
     font-size: 36px;
     color: var(--stone900);
-    font-weight: 400;
 }
 
 h2 {
     font-family: "YoungSerif", Helvetica;
-    font-size: 32px;
-    color: var(--stone900);
-    font-weight: 400;
+    font-size: 24px;
+    color: var(--brown);
+    font-weight: 700;
 }
 
 h3 {
     font-family: "Outfit-ExtraBold", Helvetica;
     font-size: 18px;
     color: var(--rose800);
-    font-weight: 700;
 }
 
 p {
-    font-family: "Outfit-Thin", sans-serif;
+    font-family: "Outfit-Regular", sans-serif;
     color: var(--stone600);
-    font-weight: 400;
     font-size: 16px;
 }
 
 .prep_card {
-    background-color: hsl(30, 54%, 90%, 0.2);
+    background-color: var(--rose50);
     padding: 20px;
-    
+}
+
+prep_card li {
+    font-family: "Outfit-Regular", sans-serif;
+    color: var(--stone600);
+    font-size: 16px;
+}
+
+ul, ol {
+    font-family: "Outfit-Regular", sans-serif;
+    color: var(--stone600);
+    font-size: 16px;
+}
+
+.nutritional-info {
+    border-collapse: separate;
+    width: 100%;
+    padding: 30px;
+}
+
+tr {
+    border-bottom: 1px solid gray; /* Add bottom border to each row */
+}
+
+tr:last-child {
+    border-bottom: none;
+}
+
+table .p {
+    font-family: "Outfit-Regular", sans-serif;
+    color: var(--stone600);
+    font-size: 16px;
+    width: 50%;
+}
+
+table .b {
+    font-family: "Outfit-Bold", sans-serif;
+    color: var(--brown);
+    font-size: 16px;
+    width: 50%;
 }
