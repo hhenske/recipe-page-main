@@ -174,7 +174,12 @@ table .b {
 
 }
 
+
+
 @media screen and (max-width: 500px) {
+    .recipe_card {
+        width: 100%;
+    }
     h1, h2, h3, p, .prep_card, ul, ol {
         margin-right: 10px;
         margin-left: 10px;
