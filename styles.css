@@ -55,28 +55,29 @@ body {
     flex-direction: column;
     justify-content: center;
     border-radius: 16px;
-    width:40%;
+    width:50%;
     /* height: 1400px; */
-    margin: 50px;
+    margin: 30px 50px;
     padding: 30px;
 }
 
 .recipe_card img {
     
     border-radius: 16px;
-    /* width: 500px;
-    height:300px; */
+   
 }
 
 h1 {
     font-family: "YoungSerif", Helvetica;
-    font-size: 36px;
+    font-size: 32px;
     color: var(--stone900);
+    font-weight: 200;
+    margin-bottom: 20px;
 }
 
 h2 {
     font-family: "YoungSerif", Helvetica;
-    font-size: 24px;
+    font-size: 20px;
     color: var(--brown);
     font-weight: 700;
 }
@@ -85,12 +86,14 @@ h3 {
     font-family: "Outfit-ExtraBold", Helvetica;
     font-size: 18px;
     color: var(--rose800);
+    margin: 0;
 }
 
 p {
-    font-family: "Outfit-Regular", sans-serif;
+    font-family: "Outfit-Thin", sans-serif;
     color: var(--stone600);
     font-size: 16px;
+    margin-top: 0;
 }
 
 .prep_card {
@@ -142,4 +145,61 @@ table .b {
     color: var(--brown);
     font-size: 16px;
     width: 50%;
+}
+
+
+@media screen and (max-width: 1300px) {
+    .recipe_card {
+        width: 75%;
+    }
+    
+}
+
+@media screen and (max-width: 1150px) {
+    .recipe_card {
+        padding: 0;
+    }
+    .recipe_card img {
+        width: 100%;
+        border-radius: 0;
+    }
+    h1, h2, h3, p, .prep_card, ul, ol {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        font-size: 22px;
+    }
+    h2 {
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+    h3 {
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    p, .prep_card, ul, ol {
+        margin-right: 10px;
+        margin-right: 10px;
+        font-size: 14px;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
 }
