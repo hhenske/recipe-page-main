@@ -37,7 +37,7 @@
 
 * {
     font-size: 16px;
-    
+    font-family: "Outfit-Regular", sans-serif;
 }
 
 body {
@@ -49,21 +49,21 @@ body {
     padding-top: 50px;
 }
 
-section{
+.recipe_card {
     background-color: var(--white);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 10px;
+    border-radius: 16px;
     width:40%;
     /* height: 1400px; */
     margin: 50px;
     padding: 30px;
 }
 
-section img {
+.recipe_card img {
     
-    border-radius: 10px;
+    border-radius: 16px;
     /* width: 500px;
     height:300px; */
 }
@@ -98,7 +98,7 @@ p {
     padding: 20px;
 }
 
-prep_card li {
+.prep_card li {
     font-family: "Outfit-Regular", sans-serif;
     color: var(--stone600);
     font-size: 16px;
@@ -112,16 +112,22 @@ ul, ol {
 
 .nutritional-info {
     border-collapse: separate;
+    border-Spacing: 0;
     width: 100%;
     padding: 30px;
 }
 
 tr {
     border-bottom: 1px solid gray; /* Add bottom border to each row */
+    height: 40px;
 }
 
 tr:last-child {
     border-bottom: none;
+}
+
+td {
+    border-bottom: 1px solid gray;
 }
 
 table .p {
